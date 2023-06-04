@@ -57,7 +57,7 @@ router.post("/login",upload.none(), function(request, response) {
     if(!!foundedUser){//если пользователь существует...
         request.session.id = foundedUser.id;
         //отправляется авторизованный пользователь
-        response.json({success: true, user: foundedUser});
+        response.json({success: true, user: foundedUser, comm: request.session.id});
     }
     else//если пользователь не существует, то отправляется ответ с ошибкой о ненахождении пользователя
         response.json({success: false, error:`Пользователь c email ${email} и паролем ${password} не найден`});
