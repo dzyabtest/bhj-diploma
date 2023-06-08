@@ -11,7 +11,17 @@ class TransactionsPage {
    * через registerEvents()
    * */
   constructor( element ) {
+    if (!element) {
+      alert('На страницу транзакций передан пустой элемент!');
+      return;
+    }
+    if (!document.body.contains(element)) {
+      alert('На страницу транзакций передан отсутствующий элемент!');
+      return;
+    }
 
+    this.element = element;
+    this.registerEvents();
   }
 
   /**

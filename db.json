@@ -41,6 +41,12 @@
       "email": "test4@test.ru",
       "password": "abracadabra",
       "id": "1gltha24lig8np4d"
+    },
+    {
+      "name": "test",
+      "email": "test@test",
+      "password": "test",
+      "id": "i517mfhwlikuifgw"
     }
   ],
   "accounts": [

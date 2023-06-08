@@ -1,7 +1,7 @@
 {
   "name": "bhj-diploma",
   "version": "1.0.0",
-  "description": "",
+  "description": "Нажмите на изображение, чтобы посмотреть видео и описание:",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
