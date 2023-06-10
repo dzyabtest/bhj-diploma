@@ -47,6 +47,24 @@
       "email": "test@test",
       "password": "test",
       "id": "i517mfhwlikuifgw"
+    },
+    {
+      "name": "dzyab",
+      "email": "dzyaba@gmail.com",
+      "password": "1234",
+      "id": "1glthc4cliqgo4ml"
+    },
+    {
+      "name": "test10",
+      "email": "test10@test",
+      "password": "test",
+      "id": "1glth7t8liqgrhtk"
+    },
+    {
+      "name": "test12",
+      "email": "test12@test",
+      "password": "test",
+      "id": "1glth7vgliqh0kue"
     }
   ],
   "accounts": [
@@ -64,6 +82,11 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "Сейф",
+      "user_id": "1",
+      "id": "1glthgrcliq70tdd"
     }
   ],
   "transactions": [
@@ -201,6 +224,42 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "1glth4j8liqedosk",
+      "type": "income",
+      "name": "111",
+      "sum": 111,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2023-06-10T19:36:41.923Z"
+    },
+    {
+      "id": "1glthglgliqenwmp",
+      "type": "income",
+      "name": "222",
+      "sum": 222,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2023-06-10T19:44:38.640Z"
+    },
+    {
+      "id": "1glthei8liqerofg",
+      "type": "income",
+      "name": "333",
+      "sum": 333,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2023-06-10T19:47:34.635Z"
+    },
+    {
+      "id": "1glth8wcliqert2n",
+      "type": "expense",
+      "name": "444",
+      "sum": 444,
+      "account_id": "1",
+      "user_id": "1",
+      "created_at": "2023-06-10T19:47:40.654Z"
     }
   ]
 }

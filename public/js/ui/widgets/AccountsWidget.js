@@ -108,6 +108,10 @@ class AccountsWidget {
    * и добавляет его внутрь элемента виджета
    * */
   renderItem(data){
+    if (!data) {
+      return;
+    };
+
     const accWidgetElement = document.querySelector('ul.accounts-panel');
 
     data.forEach(item => {

@@ -22,6 +22,7 @@ class RegisterForm extends AsyncForm {
       this.element.reset();
 
       App.setState( 'user-logged' );
+      App.init();
     });
 
   }

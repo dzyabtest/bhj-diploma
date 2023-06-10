@@ -12,7 +12,14 @@ class UserWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor(element){
+    if (!element) {
+      alert('В UserWidget передат пустой элемент!');
+      return;
+    }
 
+    this.element = element;
+
+    this.update();
   }
 
   /**
@@ -23,6 +30,13 @@ class UserWidget {
    * авторизованного пользователя
    * */
   update(){
+    const user = User.current();
 
+    if (!user) {
+      return;
+    }
+
+    const userElement = document.querySelector('.user-name');
+    userElement.textContent = user.name;
   }
 }
