@@ -28,11 +28,11 @@ class AsyncForm {
    * вызывает метод submit()
    * */
   registerEvents() {
-    this.element.addEventListener('submit', (e) => {
-      e.preventDefault();
+    this.element.onsubmit = (event) => {
+      event.preventDefault();
       this.submit();
       return false;
-    });
+    }
   }
 
   /**

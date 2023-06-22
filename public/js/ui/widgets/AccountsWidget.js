@@ -112,6 +112,8 @@ class AccountsWidget {
       return;
     };
 
+    this.clear();
+    
     const accWidgetElement = document.querySelector('ul.accounts-panel');
 
     data.forEach(item => {

@@ -126,7 +126,16 @@ class TransactionsPage {
       let atrSelector = '[data-id="' + id +'"]';
       const transactionBtn = document.querySelector('button.transaction__remove' + atrSelector);
       const transactionElement = transactionBtn.closest('.transaction');
-      transactionElement.remove();
+
+      const data = {id: id};
+
+      Transaction.remove(data, (err, resp) => {
+
+        if (resp.success) {
+          transactionElement.remove();
+        };
+
+      });
     };
   }
 
